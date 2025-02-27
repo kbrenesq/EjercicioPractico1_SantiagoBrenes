@@ -8,28 +8,70 @@
     <body>
         <header th:replace="~{layout/plantilla :: header}" />
 
-        <section class="container" style="margin-top:40px">
+        <div class="container">
+            <section class="landing">
+                <div class="landing-content">
+                    <span class="special-heading">Tu salud, nuestra prioridad</span>
+                    <p>En Farmacias Santiago, nos dedicamos a brindarte los mejores productos y servicios para el cuidado de
+                        tu salud y bienestar. Con un equipo de profesionales comprometidos y una amplia variedad de
+                        medicamentos, suplementos y artículos de cuidado personal, somos tu mejor opción para encontrar todo
+                        lo que necesitas en un solo lugar.</p>
+                </div>
+                <div class="landing-img">
+                    <img th:src="@{images/farma_landing.jpg}" alt="" srcset="">
+                </div>
+            </section>
 
-            <h1>Encuentra lo que necesitas.</h1>
-            <p>Farmacia Santiago es tu mejor opción en salud y bienestar. Ofrecemos una amplia variedad de medicamentos,
-                productos de cuidado personal y asesoría profesional para garantizar el mejor servicio. Con atención
-                personalizada y precios accesibles, en Farmacia Santiago, tu bienestar es nuestra prioridad.</p>
+            <section class="video-producto">
+                <h2>Algunos de nuestros productos</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CIp33P9Io9g?si=rHce2ZdsnIVOe84n"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
 
-            <br />
-            <br />
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CIp33P9Io9g?si=rHce2ZdsnIVOe84n"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"></iframe>
-            
-            <br>
-            <br>
-            <h2>Visitanos</h2>
-            Nos ubicamos en Cartago, 500m sur de los tribunales de justicia. Vení y visitanos!
-        </section>
-        
-        <br>
-        <br>
+            <section class="main">
+                <h2>Descubrí que podés hacer</h2>
+                <div class="main-cards">
+                    <article class="main-card">
+                        <div class="main-card-heading">
+                            <div></div>
+                            <h3>Categorias</h3>
+                        </div>
+                        <div class="main-card-content">
+                            <p>Descubrir las diferentes tipos de categorias de nuestra farmacia</p>
+                        </div>
+                        <div class="main-card-btns">
+                            <a href="" class="secondary-btn">Ver Categorias</a>
+                        </div>
+                    </article>
+                    <article class="main-card">
+                        <div class="main-card-heading">
+                            <div></div>
+                            <h3>Productos</h3>
+                        </div>
+                        <div class="main-card-content">
+                            <p>Agregá nuevos productos a la farmacia</p>
+                        </div>
+                        <div class="main-card-btns">
+                            <a href="" class="secondary-btn">Añadir productos</a>
+                        </div>
+                    </article>
+                    <article class="main-card">
+                        <div class="main-card-heading">
+                            <div></div>
+                            <h3>Quejese aqui!</h3>
+                        </div>
+                        <div class="main-card-content">
+                            <p>Tiene algun problema con nuestra farmacia? Diay quejese.</p>
+                        </div>
+                        <div class="main-card-btns">
+                            <a href="" class="secondary-btn">Ver Categorias</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
 
         <footer th:replace="~{layout/plantilla :: footer}" />
     </body>
